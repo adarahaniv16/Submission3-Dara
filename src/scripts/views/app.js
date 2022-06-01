@@ -27,7 +27,7 @@ class App {
     const skipLinkElement = document.querySelector('.skip-link');
     skipLinkElement.addEventListener('click', (event) => {
       event.preventDefault();
-      document.querySelector('#content').focus();
+      document.querySelector('#restaurant').focus();
     });
   }
 }

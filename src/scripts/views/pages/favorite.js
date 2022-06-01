@@ -7,14 +7,14 @@ const Favorite = {
     if (restaurants.length) {
       return `
           <h2 tabindex="0" class="content-heading">Restaurant Favorite</h2>
-          <div id="restaurants" class="content">
+          <div tabindex="0" id="restaurants" class="content">
    
           </div>
       `;
     }
     return `
           <h2 tabindex="0" class="content-heading">Restaurant Favorite</h2>
-          <div id="restaurants" class="content">
+          <div tabindex="0" id="restaurants" class="content">
 
           </div>
           <div class="restaurant__not__found">Tidak ada restaurant untuk ditampilkan</div>

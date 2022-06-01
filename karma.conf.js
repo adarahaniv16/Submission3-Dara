@@ -1,3 +1,4 @@
+/* eslint-disable func-names */
 // Karma configuration
 // Generated on Fri Jul 03 2020 20:15:52 GMT+0700 (Western Indonesia Time)
 module.exports = function (config) {
@@ -12,7 +13,7 @@ module.exports = function (config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'specs/**/*Spec.js'
+      'specs/**/*Spec.js',
     ],
 
     // list of files / patterns to exclude
@@ -21,7 +22,7 @@ module.exports = function (config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      'specs/**/*Spec.js': ['webpack', 'sourcemap']
+      'specs/**/*Spec.js': ['webpack', 'sourcemap'],
     },
 
     webpack: {
@@ -30,13 +31,13 @@ module.exports = function (config) {
       // webpack watches dependencies
       // webpack configuration
       devtool: 'inline-source-map',
-      mode: 'development'
+      mode: 'development',
     },
 
     webpackMiddleware: {
       // webpack-dev-middleware configuration
       // i. e.
-      stats: 'errors-only'
+      stats: 'errors-only',
     },
 
     // test results reporter to use
@@ -68,6 +69,6 @@ module.exports = function (config) {
 
     // Concurrency level
     // how many browser should be started simultaneous
-    concurrency: Infinity
-  })
-}
+    concurrency: Infinity,
+  });
+};

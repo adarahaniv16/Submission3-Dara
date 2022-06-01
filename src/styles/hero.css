@@ -31,7 +31,7 @@
 
 
 /* css responsif */
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
     .hero {
         margin-top: 0px;
         height: 200px;
